@@ -21,7 +21,11 @@ describe('isAnagram - basic functionality', () => {
     });
 
     // 'listens' 'silent' NOT anagrams
-
+    it('returns false when the strings have the same letters in different quantities', () => {
+        const expected = false;
+        const actual = isAnagram('listens', 'silent');
+        expect(actual).to.equal(expected);
+    });
     // 'conversation' 'voices rant on' ARE anagrams
 
     // 'STATE' 'taste' ARE anagrams
