@@ -1,0 +1,32 @@
+{
+  "name": "test-driven-development",
+  "version": "1.0.0",
+  "description": "Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the code is improved so that the tests pass. This is opposed to software development that allows code to be added that is not proven to meet requirements.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha \"src/**/*.test.js\" --recursive --require @babel/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vozandrey/test-driven-development.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vozandrey/test-driven-development/issues"
+  },
+  "homepage": "https://github.com/vozandrey/test-driven-development#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.0",
+    "@babel/preset-env": "^7.10.0",
+    "@babel/register": "^7.9.0",
+    "chai": "^4.2.0",
+    "mocha": "^7.2.0",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.15"
+  }
+}
